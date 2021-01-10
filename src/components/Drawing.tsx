@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#ccc",
     marginBottom: 30,
     position: "relative",
+    overflow: 'hidden'
   },
   container: {
     position: "relative",
@@ -226,9 +227,10 @@ export default function Drawing() {
                       alignItems="center"
                       spacing={3}
                       key={i}
+                     
                     >
                    
-                      <Grid item xs={11} md={11}>
+                      <Grid item xs={12} md={11}>
                       <Typography gutterBottom>Rectangle {i + 1}</Typography>
 
                         <TextField
@@ -276,7 +278,7 @@ export default function Drawing() {
                           variant="outlined"
                         />
                       </Grid>
-                      <Grid item xs={1} md={1}>
+                      <Grid item xs={12} md={1}>
                         <Button variant="text" color="secondary" onClick={() => deleteShape(i, setRect)}>
                           Delete
                       </Button>
@@ -296,7 +298,7 @@ export default function Drawing() {
                       key={i}
                     >
                       
-                      <Grid item xs={11} md={11}>
+                      <Grid item xs={12} md={11}>
                         <Typography gutterBottom>Circle {i + 1}</Typography>
                         <TextField
                           label="Fill Color"
@@ -331,7 +333,7 @@ export default function Drawing() {
                           variant="outlined"
                         />
                       </Grid>
-                      <Grid item xs={1} md={1}>
+                      <Grid item xs={12} md={1}>
                         <Button variant="text" color="secondary" onClick={() => deleteShape(i, setCircle)}>
                           Delete
                       </Button>
@@ -351,7 +353,7 @@ export default function Drawing() {
                       key={i}
                     >
                     
-                      <Grid item xs={11} md={11}>
+                      <Grid item xs={12} md={11}>
                         <Typography gutterBottom>Line {i + 1}</Typography>
                         <TextField
                           label="Color"
@@ -401,7 +403,7 @@ export default function Drawing() {
                           variant="outlined"
                         />
                       </Grid>
-                      <Grid item xs={1} md={1}>
+                      <Grid item xs={12} md={1}>
                         <Button variant="text" color="secondary" onClick={() => deleteShape(i, setLine)}>
                           Delete
                       </Button>
