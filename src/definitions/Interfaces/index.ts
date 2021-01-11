@@ -1,6 +1,6 @@
 export interface InfoConfig {
-  x?: number;
-  y?: number;
+  x: number;
+  y: number;
   x1: number;
   y1: number;
   x2: number;
@@ -12,5 +12,5 @@ export interface InfoConfig {
   height: number;
   stroke: string;
   strokeWidth: number;
-  radius?: number;
+  radius: number;
 }
